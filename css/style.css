@@ -33,7 +33,7 @@ body {
   height: 100px;
   width: 60%;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .linkText {
