@@ -38,3 +38,7 @@ body {
   text-decoration: underline;
   cursor: pointer;
 }
+
+.imgLink {
+  display: flex;
+}
