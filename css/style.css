@@ -12,7 +12,6 @@ body {
 .navBar {
   background-color: #000;
   width: 100%;
-  height: 100px;
   display: flex;
   justify-content: center;
   padding: 20px 0;
@@ -23,18 +22,16 @@ body {
   height: 100%;
 }
 
-.navBarLogo {
-  display: flex;
-  height: 90%;
-  width: 40%;
+.navLogo {
+  width: 100%;
 }
 
 .navBarMenu {
   display: flex;
-  height: 100px;
-  width: 60%;
   align-items: center;
   justify-content: space-between;
+  width: 75%;
+  padding-left: 50px;
 }
 
 .linkText {
@@ -52,7 +49,7 @@ a {
 
 .imgLink {
   display: flex;
-  width: 40%;
+  width: 25%;
 }
 
 .citeLink {
