@@ -6,10 +6,12 @@ body {
   padding: 0;
   margin: 0;
   font-family: Arial;
+  background-color: #212121;
+  color: #fff;
 }
 
 .navBar {
-  background-color: #FFDC00;
+  background-color: #000;
   width: 100%;
   height: 100px;
   display: flex;
@@ -38,7 +40,7 @@ body {
 
 .linkText {
   font-size: large;
-  color: #000;
+  color: #fff;
 }
 
 .linkText:hover {
@@ -50,6 +52,13 @@ body {
   display: flex;
 }
 
+.citeLink {
+  font-size: small;
+  font-style: italic;
+  color: #ffffff80;
+  margin-top: 0;
+}
+
 .pageContent {
   display: flex;
   flex-direction: column;
@@ -58,25 +67,35 @@ body {
 }
 .gridBox {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
   }
   
-  .txtLayout { grid-area: 1 / 1 / 2 / 2; }
-  .imgLayout { grid-area: 1 / 2 / 2 / 3; }
-  .imgMat { grid-area: 2 / 1 / 3 / 2; }
-  .txtMat { 
-    grid-area: 2 / 2 / 3 / 3; 
+  .txtLayout {
+    grid-area: 1 / 1 / 2 / 3;
+    padding: 0 10px 0 0;
   }
-  .txtVurdering { grid-area: 3 / 1 / 4 / 2; }
-  .imgVurdering { grid-area: 3 / 2 / 4 / 3; }
+  .layoutHeader {
+    margin-top: 0;
+  }
+  .imgLayout { grid-area: 1 / 3 / 2 / 5; }
+  .imgMat { grid-area: 2 / 1 / 3 / 3; }
+  .txtMat { 
+    grid-area: 2 / 3 / 3 / 5;
+    padding: 0 10px;
+  }
+  .txtVurdering {
+    grid-area: 3 / 1 / 4 / 3;
+    padding: 0 10px 0 0;
+  }
+  .imgVurdering { grid-area: 3 / 3 / 4 / 5; }
   .prosAndCons { 
-    grid-area: 1 / 3 / 4 / 4; 
-    background-color: lightblue;
+    grid-area: 1 / 5 / 4 / 6; 
+    background-color: #6200EA;
+    margin: 0 0 0 10px;
+    padding: 10px;
   }
 
 .images {
-  width: 500px;
+  width: 100%;
 }
