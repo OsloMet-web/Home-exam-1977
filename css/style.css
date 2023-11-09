@@ -50,6 +50,10 @@ body {
 
 .imgLink {
   display: flex;
+<<<<<<< HEAD
+=======
+  width: 100%;
+>>>>>>> 9b3d626f95410d887d4a7fef769321818bca0c74
 }
 
 .citeLink {
