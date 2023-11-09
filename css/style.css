@@ -1,42 +1,48 @@
 body {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
   font-family: Arial;
   background-color: #212121;
   color: #fff;
 }
-
 .navBar {
   background-color: #000;
   width: 100%;
+  height: 100px;
   display: flex;
   justify-content: center;
   padding: 20px 0;
 }
-
 .navBarContent {
   width: 85%;
   display: flex;
-  justify-content: space-between;
+  height: 100%;
 }
 
-.navLogo {
-  width: 100%;
+.navBarLogo {
+  display: flex;
+  height: 90%;
+  width: 40%;
 }
 
 .navBarMenu {
   display: flex;
+  height: 100px;
+  width: 60%;
   align-items: center;
   justify-content: space-between;
 }
 
 .linkText {
   font-size: large;
-  color: #fff;
+}
+
+a {
+  color: #9575CD;
 }
 
 .linkText:hover {
@@ -46,14 +52,7 @@ body {
 
 .imgLink {
   display: flex;
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-  width: 100%;
->>>>>>> 9b3d626f95410d887d4a7fef769321818bca0c74
-=======
-  width: 25%;
->>>>>>> Stashed changes
+  width: 40%;
 }
 
 .citeLink {
@@ -62,7 +61,6 @@ body {
   color: #ffffff80;
   margin-top: 0;
 }
-
 .pageContent {
   display: flex;
   flex-direction: column;
@@ -72,9 +70,9 @@ body {
 .gridBox {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   }
-  
+
   .txtLayout {
     grid-area: 1 / 1 / 2 / 3;
     padding: 0 10px 0 0;
@@ -99,11 +97,123 @@ body {
     margin: 0 0 0 10px;
     padding: 10px;
   }
-
 .images {
   width: 100%;
 }
-.SokratesBilde {
-  width: 300px;
 
+.footer {
+  display: flex;
+  background-color: #000;
+  justify-content: center;
+  width: 100%;
+}
+
+.footerContent {
+  width: 85%;
+  display: flex;
+  align-self: center;
+  padding: 20px 0;
+}
+
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.footerMiddle {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerLogo {
+  height: 40px;
+}
+
+.footerRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 20%;
+}
+
+.mediaLink {
+  margin-bottom: 10px;
+  color: #9575CD;
+}
+
+.logo {
+  height: 12px;
+  padding-right: 5px;
+}
+
+.mediaBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.footerInfoText {
+  margin: 5px 0;
+}
+
+@media only screen and (max-width: 991px){
+  .navBarContent {
+    width: 95%;
+  }
+  .pageContent {
+    width: 95%;
+  }
+  .gridBox {
+    display: flex;
+    flex-direction: column;
+    }
+    .txtLayout {
+      display: flex;
+      flex-direction: column;
+    }
+    .imgLayout {
+      display: flex;
+      flex-direction: column;
+    }
+    .imgMat {
+      display: flex;
+      flex-direction: column;
+    }
+    .txtMat { 
+      display: flex;
+      flex-direction: column;
+    }
+    .txtVurdering {
+      display: flex;
+      flex-direction: column;
+    }
+    .imgVurdering {
+      display: flex;
+      flex-direction: column;
+     }
+    .prosAndCons { 
+      display: flex;
+      flex-direction: column;
+      background-color: #6200EA;
+      padding-left: 2.5%;
+      margin: 0 -2.5%;
+    }
+    .footerContent {
+      width: 95%;
+    }
+    .navBarMenu {
+      width: 65%;
+    }
 }
