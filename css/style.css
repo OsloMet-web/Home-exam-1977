@@ -101,6 +101,10 @@ a {
   width: 100%;
 }
 
+.SokratesBilde {
+  width: 300px;
+}
+
 .footer {
   display: flex;
   background-color: #000;
