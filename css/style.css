@@ -40,7 +40,10 @@ body {
 
 .linkText {
   font-size: large;
-  color: #fff;
+}
+
+a {
+  color: #9575CD;
 }
 
 .linkText:hover {
@@ -68,7 +71,7 @@ body {
 .gridBox {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   }
   
   .txtLayout {
@@ -98,4 +101,119 @@ body {
 
 .images {
   width: 100%;
+}
+
+.footer {
+  display: flex;
+  background-color: #000;
+  justify-content: center;
+  width: 100%;
+}
+
+.footerContent {
+  width: 85%;
+  display: flex;
+  align-self: center;
+  padding: 20px 0;
+}
+
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.footerMiddle {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerLogo {
+  height: 40px;
+}
+
+.footerRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 20%;
+}
+
+.mediaLink {
+  margin-bottom: 10px;
+  color: #9575CD;
+}
+
+.logo {
+  height: 12px;
+  padding-right: 5px;
+}
+
+.mediaBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.footerInfoText {
+  margin: 5px 0;
+}
+
+@media only screen and (max-width: 991px){
+  .navBarContent {
+    width: 95%;
+  }
+  .pageContent {
+    width: 95%;
+  }
+  .gridBox {
+    display: flex;
+    flex-direction: column;
+    }
+    .txtLayout {
+      display: flex;
+      flex-direction: column;
+    }
+    .imgLayout {
+      display: flex;
+      flex-direction: column;
+    }
+    .imgMat {
+      display: flex;
+      flex-direction: column;
+    }
+    .txtMat { 
+      display: flex;
+      flex-direction: column;
+    }
+    .txtVurdering {
+      display: flex;
+      flex-direction: column;
+    }
+    .imgVurdering {
+      display: flex;
+      flex-direction: column;
+     }
+    .prosAndCons { 
+      display: flex;
+      flex-direction: column;
+      background-color: #6200EA;
+      width: 100vw;
+      padding-left: 2.5%;
+      margin-left: -2.5%;
+    }
+    .footerContent {
+      width: 95%;
+    }
 }
