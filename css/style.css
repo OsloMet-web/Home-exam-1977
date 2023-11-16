@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -11,10 +11,12 @@ body {
 }
 .navBar {
   background-color: #000;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  position: sticky;
+  top: 0;
 }
 .navBarContent {
   width: 85%;
@@ -119,11 +121,11 @@ a {
 .footerLeft {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 30%;
 }
 
 .footerMiddle {
-  width: 60%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,7 +140,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  width: 20%;
+  width: 30%;
 }
 
 .mediaLink {
@@ -173,6 +175,9 @@ a {
   .navBarContent {
     width: 95%;
   }
+  .linkText {
+    font-size: xx-small;
+  }
   .pageContent {
     width: 95%;
   }
@@ -183,6 +188,7 @@ a {
     .txtLayout {
       display: flex;
       flex-direction: column;
+      padding: 0;
     }
     .imgLayout {
       display: flex;
@@ -195,10 +201,12 @@ a {
     .txtMat { 
       display: flex;
       flex-direction: column;
+      padding: 0;
     }
     .txtVurdering {
       display: flex;
       flex-direction: column;
+      padding: 0;
     }
     .imgVurdering {
       display: flex;
@@ -208,7 +216,7 @@ a {
       display: flex;
       flex-direction: column;
       background-color: #6200EA;
-      padding-left: 2.5%;
+      padding: 0 0 0 2.5%;
       margin: 0 -2.5%;
     }
     .footerContent {
