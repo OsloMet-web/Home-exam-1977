@@ -9,6 +9,21 @@ body {
   background-color: #212121;
   color: #fff;
 }
+
+.indexImgContainer {
+  overflow: hidden;
+  height: 600px;
+  position: relative;
+}
+
+.indexImg {
+ display: block;
+   width: 100%;
+   height: auto;
+   position: absolute;
+   bottom: 0;
+}
+
 .navBar {
   background-color: #000;
   width: 100vw;
@@ -171,6 +186,46 @@ a {
   margin: 5px 0;
 }
 
+.pageDescriptionSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.pageDescriptionBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 35%;
+  border: 2px solid #6200EA;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.first:hover {
+  background-color: #00000060;
+}
+
+.indexInfo {
+  background-image: url("https://foto.oslomet.no/fotoweb/cache/v2/f/H/Folder%2052/Drone-1_0001_Layer%2011.jpg.jyfo26HbMTPbI11jgBkA.UmyKebeblR.jpg");
+  height: 400px;
+}
+
+.opacityLayer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+}
+
+.imgText {
+  color: #fff;
+}
+
 @media only screen and (max-width: 991px){
   .navBarContent {
     width: 95%;
@@ -189,6 +244,7 @@ a {
       display: flex;
       flex-direction: column;
       padding: 0;
+      height: auto;
     }
     .imgLayout {
       display: flex;
@@ -202,11 +258,13 @@ a {
       display: flex;
       flex-direction: column;
       padding: 0;
+      height: auto;
     }
     .txtVurdering {
       display: flex;
       flex-direction: column;
       padding: 0;
+      height: auto;
     }
     .imgVurdering {
       display: flex;
@@ -224,5 +282,11 @@ a {
     }
     .navBarMenu {
       width: 65%;
+    }
+    .indexImgContainer {
+      height: 150px;
+    }
+    .pageDescriptionBox {
+      width: 90%;
     }
 }
