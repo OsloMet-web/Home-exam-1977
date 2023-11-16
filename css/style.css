@@ -51,6 +51,46 @@ body {
   padding-left: 50px;
 }
 
+.pageDescriptionSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.pageDescriptionBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 35%;
+  border: 2px solid #6200EA;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.pageDescriptionBox:hover {
+  background-color: #00000060;
+}
+
+.indexInfo {
+  background-image: url("https://foto.oslomet.no/fotoweb/cache/v2/f/H/Folder%2052/Drone-1_0001_Layer%2011.jpg.jyfo26HbMTPbI11jgBkA.UmyKebeblR.jpg");
+  height: 400px;
+}
+
+.opacityLayer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+}
+
+.imgText {
+  color: #fff;
+}
+
 .linkText {
   font-size: large;
 }
@@ -184,46 +224,6 @@ a {
 
 .footerInfoText {
   margin: 5px 0;
-}
-
-.pageDescriptionSection {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.pageDescriptionBox {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 35%;
-  border: 2px solid #6200EA;
-  border-radius: 20px;
-  margin: 20px;
-  padding: 20px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.pageDescriptionBox:hover {
-  background-color: #00000060;
-}
-
-.indexInfo {
-  background-image: url("https://foto.oslomet.no/fotoweb/cache/v2/f/H/Folder%2052/Drone-1_0001_Layer%2011.jpg.jyfo26HbMTPbI11jgBkA.UmyKebeblR.jpg");
-  height: 400px;
-}
-
-.opacityLayer {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: #00000090;
-}
-
-.imgText {
-  color: #fff;
 }
 
 @media only screen and (max-width: 991px){
