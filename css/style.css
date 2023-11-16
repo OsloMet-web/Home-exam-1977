@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -11,7 +11,7 @@ body {
 }
 .navBar {
   background-color: #000;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   padding: 20px 0;
@@ -172,6 +172,9 @@ a {
 @media only screen and (max-width: 991px){
   .navBarContent {
     width: 95%;
+  }
+  .linkText {
+    font-size: xx-small;
   }
   .pageContent {
     width: 95%;
