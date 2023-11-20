@@ -6,6 +6,7 @@
   padding: 20px 0;
   position: sticky;
   top: 0;
+  height: 100px;
 }
 .nav-bar-content {
   width: 85%;
@@ -14,15 +15,15 @@
 }
 
 .nav-logo {
-  width: 100%;
+  height: 100%;
 }
 
 .nav-bar-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 75%;
   padding-left: 50px;
+  width: 100%;
 }
 
 body {
@@ -75,13 +76,22 @@ body {
 }
 
 .index-info {
-  background-image: url("https://foto.oslomet.no/fotoweb/cache/v2/f/H/Folder%2052/Drone-1_0001_Layer%2011.jpg.jyfo26HbMTPbI11jgBkA.UmyKebeblR.jpg");
+  background-image: url(../image/Drone-Pilstredet.jpg);
   height: 400px;
+  background-size: cover;
+}
+
+.index-cite {
+  position: absolute;
+  justify-self: flex-end;
+  bottom: 0
 }
 
 .opacity-layer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  position: relative;
   width: 100%;
   height: 100%;
   background-color: #00000090;
@@ -121,6 +131,10 @@ a {
   align-self: center;
   width: 85%;
 }
+
+/* lager en grid som er 5 colonner bred og 3 rader høy, vi valgte 5
+colonner siden sidemenyen ikke skulle være like stor som det andre
+*/
 .grid-box {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -159,7 +173,7 @@ a {
   }
 
   .img-box {
-    height: 250px;
+    min-height: 200px;
     overflow: hidden;
   }
 
@@ -234,6 +248,25 @@ a {
   margin: 5px 0;
 }
 
+/* burger-toggle skal ikke synes ettersom vi bruker menu-icon som
+det som skal synes, den blir ikke definert før skjermen er mindre enn 991px */
+#burger-toggle {
+  display: none;
+}
+
+.nav-bar-menu-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    height: 50px;
+  }
+}
+
+/* Definerer nye grenser for skjermer som er mindre enn 991 px */
 @media only screen and (max-width: 991px){
   .nav-bar-content {
     width: 95%;
@@ -244,6 +277,9 @@ a {
   .page-content {
     width: 95%;
   }
+
+  /* Her fjerner vi gridden og gjør alt om til standard flex, med flex direction column.
+  Dette er fordi det er mye mer accessible for mindre skjermer som ikke har plass til flere colonner med info i bredden */
   .grid-box {
     display: flex;
     flex-direction: column;
@@ -283,7 +319,7 @@ a {
       flex-direction: column;
       background-color: #6200EA;
       padding: 0 0 0 2.5%;
-      margin: 0 -2.5%;
+      margin: 0 -2.5%; /* Bruker her margin -2.5% for å strekke fargen helt til kanten av skjermen ettersom det ser bedre ut */
     }
     .footer-content {
       width: 95%;
@@ -297,4 +333,55 @@ a {
     .page-description-box {
       width: 90%;
     }
+
+    .menu-icon {
+      display: block;
+      background-image: url(../image/Hamburger_icon.svg);
+      background-size: cover;
+      height: 40px;
+      width: 40px;
+    }
+    
+    .burger-toggle-container {
+      cursor: pointer;
+      align-self: center;
+    }
+    
+    .nav-bar-menu {
+      display: none;
+      flex-direction: column;
+      width: auto;
+      position: absolute;
+      top: 90px;
+      background-color: black;
+      padding: 10px;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    /* lagt til keyframes for å kontrolere animasjon av åpning av burger-menu*/
+    @keyframes menu-open {
+      0% {height: 0;}
+      200% {height: 100px;}
+    }
+    
+    /* her sier vi at når burger-toggle er checked så skal nav-bar-menu endres */
+    #burger-toggle:checked ~ .nav-bar-menu { 
+      display: flex;
+      animation-duration: 500ms; /* hvor lang tid animasjonen skal bruke fra 0% til 100% */
+      animation-name: menu-open; /* Assigner den spesifike KeyFramen */
+    }
+}
+
+/* Setter en max grense på bredden siden kan bli, denne grensen er matchet med bredden den er når den når 2000px */
+@media only screen and (min-width: 2000px){ 
+  .nav-bar-content {
+    max-width: 1700px;
+  }
+  .page-content {
+    max-width: 1700px;
+  }
+  .footer-content {
+    max-width: 1700px;
+  }
 }
