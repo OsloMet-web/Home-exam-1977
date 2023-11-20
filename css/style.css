@@ -127,28 +127,28 @@ a {
   grid-template-rows: repeat(3, 1fr);
   }
 
-  .txtLayout {
+  .topLeft {
     grid-area: 1 / 1 / 2 / 3;
     padding: 0 10px 0 0;
   }
   .layoutHeader {
     margin-top: 0;
   }
-  .imgLayout {
+  .topRight {
     grid-area: 1 / 3 / 2 / 5;
   }
-  .imgMat {
+  .centerLeft {
     grid-area: 2 / 1 / 3 / 3;
   }
-  .txtMat { 
+  .centerRight { 
     grid-area: 2 / 3 / 3 / 5;
     padding: 0 10px;
   }
-  .txtVurdering {
+  .bottomLeft {
     grid-area: 3 / 1 / 4 / 3;
     padding: 0 10px 0 0;
   }
-  .imgVurdering {
+  .bottomRight {
     grid-area: 3 / 3 / 4 / 5;
   }
   .prosAndCons { 
@@ -248,33 +248,33 @@ a {
     display: flex;
     flex-direction: column;
     }
-    .txtLayout {
+    .topLeft {
       display: flex;
       flex-direction: column;
       padding: 0;
       height: auto;
     }
-    .imgLayout {
+    .topRight {
       display: flex;
       flex-direction: column;
     }
-    .imgMat {
+    .centerLeft {
       display: flex;
       flex-direction: column;
     }
-    .txtMat { 
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-      height: auto;
-    }
-    .txtVurdering {
+    .centerRight { 
       display: flex;
       flex-direction: column;
       padding: 0;
       height: auto;
     }
-    .imgVurdering {
+    .bottomLeft {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      height: auto;
+    }
+    .bottomRight {
       display: flex;
       flex-direction: column;
      }
