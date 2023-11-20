@@ -37,12 +37,10 @@
     </h1>
     <!-- Første tekstboks-->
     <p>
-      Accessibility og inkluderende design
-      Vi har testet accessibility for hjemmesiden vår gjennom å bruke lighthouse-extension i Google Chrome. Dette har vi
-      gjort for å se om hjemmesiden vår er hensiktsmessig designet i henhold til universell og inkluderende design.
-      Dette er noe vi har hatt i baktanke gjennom hele utviklings-prosessen, men lighthouse var et godt verktøy for å se
-      om det er noe vi har oversett.
-
+      Vi har testet accessibility/tilgjengeligheten for hjemmesiden vår ved å bruke lighthouse-tillegget i Google Chrome. 
+      Dette benyttet vi oss av for å sjekke om hjemmesiden vår er hensiktsmessig designet i henhold til universell og 
+      inkluderende design. Vi har hatt dette i baktanke gjennom hele prosessen, men lighthouse var et godt verktøy for å 
+      undersøke det var noe vi hadde oversett.
     </p>
     <div class="grid-box">
       <div class="top-left">
@@ -52,11 +50,10 @@
         </h2>
         <!-- Ny tekstboks-->
         <p>
-          Vi har valgt gjennom koden å bruke % i en del størrelser, som man kan se på bildet. Dette gjør vi ettersom det
-          hjelper å skalere ned siden utifra hvor stor skjermen er. For andre ting som nav baren vår har vi valgt å
-          bytte til en hamburger-meny når siden går ned til ett mindre format. Samt at vi fjernet gridden ettersom den
-          bruker mye horisontal plass, så vi endrer det til at innholdet på siden går rett nedover for at det skal bli
-          en bedre opplevelse på minde skjermer
+          Vi har gjennom koden valgt å bruke % for en del størrelser, som man kan se på bildet. Dette gjorde vi for å 
+          skalere siden i forhold til skjermen brukeren benytter. For mindre formater/skjermer endret vi navigasjonsbaren til
+          en burgermeny, samt at vi fjernet gridden til siden ettersom dette brukte mye horisontal plass. Vi endret alt 
+          innholdet til å gå rett nedover, noe som gir brukeren en best mulig opplevelse av innholdet og siden.
         </p>
       </div>
       <div class="top-rigth">
@@ -70,12 +67,12 @@
         </h2>
         <!-- Ny tekstboks-->
         <p>
-          Ettersom at nettsiden vår er orginalt laget for pc så har vi lagt inn media query for å kunne endre på stylen
-          når skjermen blir mindre, da valgte vi å bruke en grense på 1000px, ettersom det passet bra for vår nettside.
-          Her endrer vi blant annet nav baren til en burger meny og vi fjerner gridden for bedre tilgjenlighet og
-          brukeropplevelse. For større skjermer har vi satt at etter en grene på 2000px så vil ikke innholdet på siden
-          bli bredere en 1700px. Dette er for at siden ikke skal bli strekt ut hvis noen prøver å se den på f.eks en
-          ultrawide skjerm
+          Ettersom at nettsiden vår i hovedsak er laget for pc, har vi lagt inn en media query for å kunne endre på stilen
+          når skjermen blir mindre. Her valgte vi å bruke en grense på 1000px, siden dette passet bra for vår nettside.
+          Som nevnt i "skalering", endrer vi blant annet navigasjonsbaren til en burgermeny og vi fjerner gridden for bedre tilgjenlighet og
+          brukeropplevelse. For større skjermer satt vi at etter en grense på 2000px, så vil ikke innholdet på siden
+          bli bredere en 1700px. Dette er for at siden ikke skal bli strekt for mye hvis noen prøver å se den på f.eks. en
+          ultrawide-skjerm.
         </p>
       </div>
       <div class="center-left">
@@ -88,11 +85,10 @@
         </h2>
         <!--Ny tekstboks-->
         <p>
-          Vi har brukt lighthouse til å teste nettsiden vår for å se om den er accessible og for å se at den er rask og
-          fungerer som den skal, Vi har også brukt inspect element til å endre størrelse på skjermen for å teste at
-          nettsiden ser bra ut i alle formater, samt at vi har brukt google chrome inspect element sine innebygde
-          formater for flere forskjellige telefoner. Vi har også lastet opp nettsiden gjennom Github pages så vi kan
-          teste nettsiden på våres egne telefoner og pcer for å se at den funker bra ute i drift
+          Lighthose ble benyttet for å teste nettsidens tilgjengelighet, hurtighet og funksjonalitet. Vi har også brukt 
+          inspect element til å endre størrelse på skjermen for å teste at nettsiden ser bra ut i alle formater, samt hos 
+          mindre skjermer, som ulike mobiltelefoner. Nettsiden ble også lastet opp gjennom Github-pages, slik at vi enkelt kunne
+          teste siden på våre egne telefoner/pcer for å se at alt fungerte som det skulle.
         </p>
       </div>
       <div class="bottom-right">
@@ -142,17 +138,16 @@
     <!-- Ny underoverskrift-->
     <h3>Andre viktige ting</h3>
     <p>
-      Et aktiv valg vi har besluttet er å ha navbaren «sticky» i toppen av siden for å alltid ha den tilgjennlig og det
-      vil være med å hjelpe enkel bruk av den. Vi har også definert språket på siden hvor alle siden har difinisjonen
-      lang="nb" for å si at siden står på norsk. Vi har også lagt til alt tekst på bilder, dette er viktig for å si hva
-      bildet er av i koden, men det er også viktig for å si hva som er på bildet hvis det skulle skje en feil og bildet
-      ikke klarer å vise seg på siden, for da vises alt teksten i stedet.
+      Et aktiv valg vi tok var å ha navbaren «sticky» i toppen av siden for alltid å ha den tilgjengelig for brukeren. Vi 
+      har også definert språket på alle sidene til norsk ved hjelp av definisjonen lang="nb". Alt tekst på bildene ble 
+      også benyttet for å enkelt kunne vise til bildene i koden, men også for å fortelle hva som skulle vært vist på bildet 
+      hvis det skulle oppstå en feil hvor bildet ikke ble vist. 
     </p>
     <!-- Ny tekstboks-->
     <p>
-      Vi har tatt ett valg med å legge til 4 grid bokser på hjemmesiden som inneholder, en kort introduksjon sidene sitt
-      innhold, disse er boksene også linket til sidene for enklere manøvrering i nettsiden. Vi har valgt og bruke en
-      unik fargekombinasjon med svart og lilla, ettersom disse fargene fungere kontrastmessig bra.
+      Vi valgte å legge til 4 gridbokser på indeksen, hvor hver boks inneholder en kort introduksjon av sidene sitt
+      innhold. Disse boksene er også linket til sine respektive sider for enklere manøvrering i nettsiden. Vi benyttet også en
+      unik fargekombinasjon av svart og lilla på vår side, ettersom disse fargene fungere kontrastmessig bra med hverandre.
     </p>
   </div>
   <!--Footer nederst på siden med link til -->
