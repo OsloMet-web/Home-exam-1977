@@ -1,31 +1,6 @@
-.nav-bar {
-  background-color: #000;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  height: 100px;
-}
-.nav-bar-content {
-  width: 85%;
-  display: flex;
-  height: 100%;
-}
+/* Universell styling */
 
-.nav-logo {
-  height: 100%;
-}
-
-.nav-bar-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 50px;
-  width: 100%;
-}
-
+/* ved å sette style på body får vi Universell bakgrunnsfagre, text farge og font på hele siden  */
 body {
   display: flex;
   flex-direction: column;
@@ -38,80 +13,9 @@ body {
   color: #fff;
 }
 
-.index-img-container {
-  overflow: hidden;
-  height: 600px;
-  position: relative;
-}
-
-.index-img {
- display: block;
-   width: 100%;
-   height: auto;
-   position: absolute;
-   bottom: 0;
-}
-
-.page-description-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.page-description-box {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 35%;
-  border: 2px solid #6200EA;
-  border-radius: 20px;
-  margin: 20px;
-  padding: 20px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.page-description-box:hover {
-  background-color: #00000060;
-}
-
-.index-info {
-  background-image: url(../image/Drone-Pilstredet.jpg);
-  height: 400px;
-  background-size: cover;
-}
-
-.index-cite {
-  position: absolute;
-  justify-self: flex-end;
-  bottom: 0
-}
-
-.opacity-layer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: #00000090;
-}
-
-.img-text {
-  color: #fff;
-}
-
-.link-text {
-  font-size: large;
-}
-
+/* setter en spesifik farge på alle linker */
 a {
   color: #9575CD;
-}
-
-.link-text:hover {
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 .img-link {
@@ -125,6 +29,8 @@ a {
   color: #ffffff80;
   margin-top: 0;
 }
+
+/* vi ønsker å sentrere innholdet på skjermen da valgte vi 85% */
 .page-content {
   display: flex;
   flex-direction: column;
@@ -132,9 +38,9 @@ a {
   width: 85%;
 }
 
-/* lager en grid som er 5 colonner bred og 3 rader høy, vi valgte 5
-colonner siden sidemenyen ikke skulle være like stor som det andre
-*/
+/* Unviersal grid style, denne bruker vi på alle siden utenom index
+lager en grid som er 5 colonner bred og 3 rader høy, vi valgte 5
+colonner siden sidemenyen ikke skulle være like stor som det andre */
 .grid-box {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -172,15 +78,130 @@ colonner siden sidemenyen ikke skulle være like stor som det andre
     padding: 10px;
   }
 
+  /* setter en*/
   .img-box {
     min-height: 200px;
     overflow: hidden;
   }
 
-.images {
+  /* Setter en bredde for at bildene ikke skal bruke sin originale størrelse */
+  .img-box-img {
+    width: 100%; 
+  }
+  
+
+/* nav bar */
+
+.nav-bar {
+  background-color: #000;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  height: 100px;
+  z-index: 1; 
+  /* siden vi bruker position: relativ for å få kilden til bilet på index siden enkelt nederst til
+  venstre med bottom: 0 gjør det at nav-baren vil komme bac opacity-layer, derfor bruker vi z-index: 1 for å unngå dette*/
+}
+/* vi ønsker å sentrere innholdet på skjermen da valgte vi 85% */
+.nav-bar-content {
+  width: 85%;
+  display: flex;
+  height: 100%;
+}
+
+.nav-logo {
+  height: 100%;
+}
+
+.nav-bar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
   width: 100%;
 }
 
+/* burger-toggle skal ikke synes ettersom vi bruker menu-icon som
+det som skal synes, den blir ikke definert før skjermen er mindre enn 991px */
+#burger-toggle {
+  display: none;
+}
+
+/* en container for å kunne sette burger-menyen på enden av nav-bar*/
+.nav-bar-menu-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+/* Spesifikt for Index Side */
+
+.opacity-layer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+}
+
+.index-info {
+  background-image: url(../image/Drone-Pilstredet.jpg);
+  height: 400px;
+  background-size: cover;
+}
+
+.index-cite {
+  position: absolute;
+  justify-self: flex-end;
+  bottom: 0
+}
+
+.index-img {
+ display: block;
+   width: 100%;
+   height: auto;
+   position: absolute;
+   bottom: 0;
+}
+
+.page-description-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.page-description-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 35%;
+  border: 2px solid #6200EA;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.page-description-box:hover {
+  background-color: #00000060;
+}
+
+.index-link-text {
+  font-size: large;
+}
+
+.index-link-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Footer style */
 .footer {
   display: flex;
   background-color: #000;
@@ -188,6 +209,7 @@ colonner siden sidemenyen ikke skulle være like stor som det andre
   width: 100%;
 }
 
+/* vi ønsker å sentrere innholdet på skjermen da valgte vi 85% */
 .footer-content {
   width: 85%;
   display: flex;
@@ -220,17 +242,17 @@ colonner siden sidemenyen ikke skulle være like stor som det andre
   width: 30%;
 }
 
-.media-link {
+.footer-media-link {
   margin-bottom: 10px;
   color: #9575CD;
 }
 
-.logo {
+.footer-media-logo {
   height: 12px;
   padding-right: 5px;
 }
 
-.media-box {
+.footer-media-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -248,34 +270,25 @@ colonner siden sidemenyen ikke skulle være like stor som det andre
   margin: 5px 0;
 }
 
-/* burger-toggle skal ikke synes ettersom vi bruker menu-icon som
-det som skal synes, den blir ikke definert før skjermen er mindre enn 991px */
-#burger-toggle {
-  display: none;
-}
-
-.nav-bar-menu-container {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-}
-
-@media only screen and (max-width: 600px) {
-  .nav-bar {
-    height: 50px;
-  }
-}
-
 /* Definerer nye grenser for skjermer som er mindre enn 991 px */
 @media only screen and (max-width: 991px){
+  /* på mindre skjermer vil vi beholde mer av skjermen så vi endrer content størrelsen fra 85% av skjerm bredden til 95% */
   .nav-bar-content {
     width: 95%;
   }
-  .link-text {
-    font-size: xx-small;
-  }
   .page-content {
     width: 95%;
+  }
+  .footer-content {
+    width: 95%;
+  }
+  .page-description-box {
+    width: 90%;
+  }
+
+  /* for at nav baren ikke skulle bli for stor på mindre skjermet minsker vi høyden en gang til på 600px */
+  .nav-bar {
+  height: 50px;
   }
 
   /* Her fjerner vi gridden og gjør alt om til standard flex, med flex direction column.
@@ -321,19 +334,8 @@ det som skal synes, den blir ikke definert før skjermen er mindre enn 991px */
       padding: 0 0 0 2.5%;
       margin: 0 -2.5%; /* Bruker her margin -2.5% for å strekke fargen helt til kanten av skjermen ettersom det ser bedre ut */
     }
-    .footer-content {
-      width: 95%;
-    }
-    .nav-bar-menu {
-      width: 65%;
-    }
-    .index-img-container {
-      height: 150px;
-    }
-    .page-description-box {
-      width: 90%;
-    }
 
+    /* iconet som blir satt over burger-toggle label */
     .menu-icon {
       display: block;
       background-image: url(../image/Hamburger_icon.svg);
@@ -342,11 +344,14 @@ det som skal synes, den blir ikke definert før skjermen er mindre enn 991px */
       width: 40px;
     }
     
+    /* sentrerer burger-toggle i midten av nav-baren. og endrer cursor så man ser man kan trykke */
     .burger-toggle-container {
       cursor: pointer;
       align-self: center;
     }
     
+    /* endrer nav-bar-menu til en mer passende boks for burger-menyen. bruker top 90 ettersom nav-baren under 991px skjerm bredde er 50px,
+    med padding på 20px over og under som blir 90px, da vil det se ut som den, ved hjelp av animasjonen blir dratt ned fra van baren */
     .nav-bar-menu {
       display: none;
       flex-direction: column;
