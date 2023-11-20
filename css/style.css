@@ -165,7 +165,7 @@ colonner siden sidemenyen ikke skulle være like stor som det andre
   .bottom-right {
     grid-area: 3 / 3 / 4 / 5;
   }
-  .pros-and-cons { 
+  .side-container { 
     grid-area: 1 / 5 / 4 / 6; 
     background-color: #6200EA;
     margin: 0 0 0 10px;
@@ -314,7 +314,7 @@ det som skal synes, den blir ikke definert før skjermen er mindre enn 991px */
       display: flex;
       flex-direction: column;
      }
-    .pros-and-cons { 
+    .side-container { 
       display: flex;
       flex-direction: column;
       background-color: #6200EA;
