@@ -1,4 +1,4 @@
-.navBar {
+.nav-bar {
   background-color: #000;
   width: 100vw;
   display: flex;
@@ -7,17 +7,17 @@
   position: sticky;
   top: 0;
 }
-.navBarContent {
+.nav-bar-content {
   width: 85%;
   display: flex;
   height: 100%;
 }
 
-.navLogo {
+.nav-logo {
   width: 100%;
 }
 
-.navBarMenu {
+.nav-bar-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,13 +37,13 @@ body {
   color: #fff;
 }
 
-.indexImgContainer {
+.index-img-container {
   overflow: hidden;
   height: 600px;
   position: relative;
 }
 
-.indexImg {
+.index-img {
  display: block;
    width: 100%;
    height: auto;
@@ -51,13 +51,13 @@ body {
    bottom: 0;
 }
 
-.pageDescriptionSection {
+.page-description-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.pageDescriptionBox {
+.page-description-box {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -70,16 +70,16 @@ body {
   text-decoration: none;
 }
 
-.pageDescriptionBox:hover {
+.page-description-box:hover {
   background-color: #00000060;
 }
 
-.indexInfo {
+.index-info {
   background-image: url("https://foto.oslomet.no/fotoweb/cache/v2/f/H/Folder%2052/Drone-1_0001_Layer%2011.jpg.jyfo26HbMTPbI11jgBkA.UmyKebeblR.jpg");
   height: 400px;
 }
 
-.opacityLayer {
+.opacity-layer {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -87,11 +87,11 @@ body {
   background-color: #00000090;
 }
 
-.imgText {
+.img-text {
   color: #fff;
 }
 
-.linkText {
+.link-text {
   font-size: large;
 }
 
@@ -99,66 +99,66 @@ a {
   color: #9575CD;
 }
 
-.linkText:hover {
+.link-text:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.imgLink {
+.img-link {
   display: flex;
   width: 25%;
 }
 
-.citeLink {
+.cite-link {
   font-size: small;
   font-style: italic;
   color: #ffffff80;
   margin-top: 0;
 }
-.pageContent {
+.page-content {
   display: flex;
   flex-direction: column;
   align-self: center;
   width: 85%;
 }
-.gridBox {
+.grid-box {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
   }
 
-  .topLeft {
+  .top-left {
     grid-area: 1 / 1 / 2 / 3;
     padding: 0 10px 0 0;
   }
-  .layoutHeader {
+  .layout-header {
     margin-top: 0;
   }
-  .topRight {
+  .top-rigth {
     grid-area: 1 / 3 / 2 / 5;
   }
-  .centerLeft {
+  .center-left {
     grid-area: 2 / 1 / 3 / 3;
   }
-  .centerRight { 
+  .center-right { 
     grid-area: 2 / 3 / 3 / 5;
     padding: 0 10px;
   }
-  .bottomLeft {
+  .bottom-left {
     grid-area: 3 / 1 / 4 / 3;
     padding: 0 10px 0 0;
   }
-  .bottomRight {
+  .bottom-right {
     grid-area: 3 / 3 / 4 / 5;
   }
-  .prosAndCons { 
+  .pros-and-cons { 
     grid-area: 1 / 5 / 4 / 6; 
     background-color: #6200EA;
     margin: 0 0 0 10px;
     padding: 10px;
   }
 
-  .imgBox {
+  .img-box {
     height: 250px;
     overflow: hidden;
   }
@@ -174,31 +174,31 @@ a {
   width: 100%;
 }
 
-.footerContent {
+.footer-content {
   width: 85%;
   display: flex;
   align-self: center;
   padding: 20px 0;
 }
 
-.footerLeft {
+.footer-left {
   display: flex;
   flex-direction: column;
   width: 30%;
 }
 
-.footerMiddle {
+.footer-middle {
   width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.footerLogo {
+.footer-logo {
   height: 40px;
 }
 
-.footerRight {
+.footer-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,7 +206,7 @@ a {
   width: 30%;
 }
 
-.mediaLink {
+.media-link {
   margin-bottom: 10px;
   color: #9575CD;
 }
@@ -216,85 +216,85 @@ a {
   padding-right: 5px;
 }
 
-.mediaBox {
+.media-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
 
-.footerInfo {
+.footer-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
 }
 
-.footerInfoText {
+.footer-info-text {
   margin: 5px 0;
 }
 
 @media only screen and (max-width: 991px){
-  .navBarContent {
+  .nav-bar-content {
     width: 95%;
   }
-  .linkText {
+  .link-text {
     font-size: xx-small;
   }
-  .pageContent {
+  .page-content {
     width: 95%;
   }
-  .gridBox {
+  .grid-box {
     display: flex;
     flex-direction: column;
     }
-    .topLeft {
+    .top-left {
       display: flex;
       flex-direction: column;
       padding: 0;
       height: auto;
     }
-    .topRight {
+    .top-rigth {
       display: flex;
       flex-direction: column;
     }
-    .centerLeft {
+    .center-left {
       display: flex;
       flex-direction: column;
     }
-    .centerRight { 
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-      height: auto;
-    }
-    .bottomLeft {
+    .center-right { 
       display: flex;
       flex-direction: column;
       padding: 0;
       height: auto;
     }
-    .bottomRight {
+    .bottom-left {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      height: auto;
+    }
+    .bottom-right {
       display: flex;
       flex-direction: column;
      }
-    .prosAndCons { 
+    .pros-and-cons { 
       display: flex;
       flex-direction: column;
       background-color: #6200EA;
       padding: 0 0 0 2.5%;
       margin: 0 -2.5%;
     }
-    .footerContent {
+    .footer-content {
       width: 95%;
     }
-    .navBarMenu {
+    .nav-bar-menu {
       width: 65%;
     }
-    .indexImgContainer {
+    .index-img-container {
       height: 150px;
     }
-    .pageDescriptionBox {
+    .page-description-box {
       width: 90%;
     }
 }
