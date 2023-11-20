@@ -271,7 +271,7 @@ det som skal synes, den blir ikke definert før skjermen er mindre enn 991px */
 }
 
 /* Definerer nye grenser for skjermer som er mindre enn 991 px */
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 1000px){
   /* på mindre skjermer vil vi beholde mer av skjermen så vi endrer content størrelsen fra 85% av skjerm bredden til 95% */
   .nav-bar-content {
     width: 95%;
